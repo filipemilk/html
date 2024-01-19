@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" maxlength="30" required placeholder="Nome completo">
+            </p>
+            <p>
+                <input type="radio" name="sexo" id="fem">
+                <label for="fem">Feminino</label>
+                <input type="radio" name="sexo" id="masc">
+                <label for="masc">Feminino</label>
+            </p>
+            <p>
+                <label for="cor">Cor:</label>
+                <input type="color" name="cor" id="cor">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+            
+
+        </p>
+    </form>
+</body>
+</html>
