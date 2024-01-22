@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+html {
+    background-color: aqua;
+}
+
+body {
+    background-color: yellow;
+}
+
+main {
+    background-color: azure;
+}
+
+section {
+    background-color: blue;
+}
+
+div {
+    background-color: brown;
+}
