@@ -1,0 +1,16 @@
+/*DISPLAY: BLOCK E INLINE*/
+
+h1 {/*box-level (linha sozinho)*/
+    border: 5px solid black;
+    background-color: rgba(211, 211, 211, 0.548);
+    outline: 5px dashed salmon;
+    height: 300px;
+    width: 300px;
+    padding: 10px; /*DENTRO*/
+    margin: 20px auto; /*FORA*/
+    text-align: center; /*CENTRALIZA TEXTO DENTRO DA CAIXA*/
+}
+
+a {/*inline-level*/
+    display: block; /*box-level (linha sozinho)*/
+}
