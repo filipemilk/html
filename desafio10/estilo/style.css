@@ -16,10 +16,10 @@
     padding: 0px;
 }
 
+
 body {
     background-color: var(--cor0);
     font-family: var(--font-padrao);
-
 }
 
 header {
@@ -33,6 +33,7 @@ header > h1 {
     color: white;
     margin-bottom: 20px;
     font-size: 3em;
+    font-weight: normal;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
 }
 
@@ -78,21 +79,109 @@ main {
     border-bottom-right-radius: 10px;
 }
 
-main > article > h1 {
-    color: var(--cor5);
+main p {  /*Sem o sinal > pode estar dentro de qualquer coisa dentro do main*/
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
 }
 
-main > article> img {
+main h1 {
+    color: var(--cor5);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+main h2 {
+    color: var(--cor4);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
+    font-weight: normal;
+}
+
+main img {
     width: 100%;
 }
 
-main > article> img.pequena {
-    width: 50%;
+main img.pequena {
+    max-width: 350px;
     display: block;
     margin: auto;
+}
+
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 58%;
+
+    position: relative;
+}
+
+div.video iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+
+aside h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0'; /*https://emojipedia.org/  PENÚLTIMO VÍDEO*/
+    list-style-position: inside;
+    columns: 2;
 }
 
 footer {
     background-color: var(--cor5);
     color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
 }
