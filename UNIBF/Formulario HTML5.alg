@@ -1,0 +1,69 @@
+<code>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Concurso de fotografia</title>
+  <meta charset="utf-8">
+</head>
+<body>
+
+<form method="post" enctype="multipart/form-data">
+  <fieldset id="upload">
+  <legend>Concurso de fotografia</legend>
+
+  <table border="0">
+    <tr>
+      <td><label for="idFoto">Foto</label></td>
+      <td><input type="file" name="foto" id="idFoto" required=""></td>
+    </tr>
+
+    <tr>
+      <td><label for="idData">Data do clique</label></td>
+      <td><input type="date" name="data" id="idData" min="2017-01-01" max="2017-12-31" required=""></td>
+    </tr>
+
+    <tr>
+      <td><label for="idCategoria">Categoria</label></td>
+      <td>
+      <select name="categoria" id="idCategoria">
+        <option value="N">Natureza</option>
+        <option value="P">Pessoas</option>
+        <option value="C">Cidades</option>
+      </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td><label for="idDescricao">Descrição da foto</label></td>
+      <td><input type="text" name="descricao" id="idDescricao" required="" size="50"></td>
+    </tr>
+
+    <tr>
+      <td><label for="idNome"> Nome do autor</label></td>
+      <td><input type="text" name="nome" id="idNome" size="50" required=""></td>
+    </tr>
+
+    <tr>
+      <td><label for="idEmail">E-mail do autor</label></td>
+      <td><input type="email" name="email" id="idEmail" size="50" required=""></td>
+    </tr>
+
+    <tr>
+      <td></td>
+      <td><input type="checkbox" name="autorizacao" id="idAutorizacao">Autorizo o uso da fotografia</td>
+    </tr>
+
+    <tr>
+      <td></td>
+      <td><input type="submit" name="enviar" value="Enviar"></td>
+    </tr>
+  </table>
+  </fieldset>
+</form>
+
+</body>
+</html>
+
+
+</code>
