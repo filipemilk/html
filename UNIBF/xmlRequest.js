@@ -11,5 +11,11 @@ function getXmlHttpRequest() {
 function alteraURL(url) {
     document.getElementById("carregando").innerHTML = "<img scr='carregando.gif'>"
     xmlhttp.open("POST", url, true)
-    xmlhttp.
+    xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == 4) {
+            document.getElementById("urlContent").innerHTML = xmlhttp.responseText
+            document.getElementById("carregando").innerHTML = ""
+        }
+    }
+    xmlhttp.send(null)
 }
