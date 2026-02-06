@@ -1,0 +1,14 @@
+/* Cor padrão para tbody ímpares */
+.zebra-table tbody:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Cor diferente para tbody pares */
+.zebra-table tbody:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Borda opcional para separar grupos */
+.zebra-table tbody {
+    border-bottom: 2px solid #ccc;
+}
